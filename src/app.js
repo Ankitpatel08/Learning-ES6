@@ -1,5 +1,18 @@
-import test from "./app1";
+import restParameters from "./rest-function";
+import anonymousFunc from "./anonymous-function";
+import lambdaFunc from "./lambda-function";
+import eventHandler from "./event-handler";
 import css from "./main.css";
 
-test('param1');
+//calling function with rest parameters
+restParameters('param1','param2');
+restParameters('param1','param2','param3');
 
+//calling anonymous function
+anonymousFunc(10, 20);
+
+//calling lambda function
+lambdaFunc();
+
+//eventHandler
+self.eventHandler = new eventHandler();
