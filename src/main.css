@@ -4,3 +4,12 @@ body {
 section div{
     border-bottom: thick dotted #0000FF;
 }
+
+#dialog-boxes div, #events div {
+    border-bottom: none;
+    margin: 10px auto;
+}
+
+#dialog-boxes, #events {
+    border-bottom: thick dotted #0000FF;
+}
