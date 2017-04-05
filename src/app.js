@@ -2,6 +2,7 @@ import restParameters from "./rest-function";
 import anonymousFunc from "./anonymous-function";
 import lambdaFunc from "./lambda-function";
 import eventHandler from "./event-handler";
+import dialogBoxes from "./dialog-boxes"
 import css from "./main.css";
 
 //calling function with rest parameters
@@ -16,3 +17,6 @@ lambdaFunc();
 
 //eventHandler
 self.eventHandler = new eventHandler();
+
+//dialog boxess
+self.dialogBoxes = new dialogBoxes();
