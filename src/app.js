@@ -6,6 +6,8 @@ import dialogBoxes from "./dialog-boxes";
 import objects from "./objects";
 import numbers from "./numbers";
 import strings from "./strings";
+import arrays from "./arrays";
+import collections from "./collections";
 import css from "./main.css";
 
 //calling function with rest parameters
@@ -32,3 +34,9 @@ self.numbers = new numbers();
 
 //strings
 self.strings = new strings();
+
+//Arrays
+self.arrays = new arrays();
+
+//collections
+self.collections = new collections();
