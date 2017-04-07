@@ -77,5 +77,75 @@ export default class collections {
             console.log(`map | for loop | ${content[0]} + ${content[1]}`);
         }
 
+        // WeakMap
+        // 1. key must be object
+        // 2. keys in weak map can be garbage collected
+        // 3. A weakmap cannot be iterated or cleared
+        let weakMap = new WeakMap(),
+            obj = {};
+        weakMap.set(obj, "value");
+        console.log("weakMap object", weakMap.has(obj));
+
+        // Sets : array can not contain duplicates
+
+        var setEmployee = new Set('emp1', 'emp2', 'emp3'),
+            setSize = setEmployee.size;
+
+            //set.size property : returns the number of values in the set object
+            console.log("set size", setSize);
+
+            //================== Set Methods ======================//
+            // 1. set.add() : add element in set
+            setEmployee.add("emp4");
+            console.log("set.add", setEmployee);
+
+            //2. set.clear() : clear all elements
+            setEmployee.clear();
+            console.log("set after clear", setEmployee);
+
+            setEmployee.add('emp1')
+            .add('emp2')
+            .add('emp3');
+
+            // 3. set.delete(value) : delete value from set
+            setEmployee.delete('emp3');
+
+            setEmployee.add('emp3');
+
+            // 4. set.entries : returns array of [value, value]
+            var setEntries = setEmployee.entries();
+            console.log("set entries", setEntries.next().value);
+            console.log("set entries", setEntries.next().value);
+
+            // 5. forEach : execute specified function for each entry
+            function printDetails(value) {
+                console.log("set forEach", value);
+            }
+
+            setEmployee.forEach(printDetails);
+
+            // 6. set.has(value) : returns boolean
+            console.log("set has value", setEmployee.has('emp1'));
+
+            // 7. set.values() : returns new Iterator object that contains
+            // the value
+            var setValues = setEmployee.values();
+            console.log("set values", setValues.next().value);
+            console.log("set values", setValues.next().value);
+
+            // WeakSet : only contains objects, cannot be iterated
+            var weakSet = new WeakSet();
+            let obj1 = {
+                    'key1': 'value1'
+                },
+                obj2 = {
+                    'key2': 'value2'
+                };
+
+            weakSet.add(obj1)
+            .add(obj2);
+            console.log("weakset object check", weakSet.has(obj1));
+
+
     }
 }
