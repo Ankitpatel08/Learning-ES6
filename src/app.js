@@ -11,6 +11,8 @@ import collections from "./collections";
 import ClassCar from "./class";
 import ClassCategory from "./class-inheritance";
 import ClassB from "./method-overriding";
+import Callback from "./callback";
+import promises from "./promises";
 import css from "./main.css";
 
 //calling function with rest parameters
