@@ -8,6 +8,9 @@ import numbers from "./numbers";
 import strings from "./strings";
 import arrays from "./arrays";
 import collections from "./collections";
+import ClassCar from "./class";
+import ClassCategory from "./class-inheritance";
+import ClassB from "./method-overriding";
 import css from "./main.css";
 
 //calling function with rest parameters
@@ -40,3 +43,22 @@ self.arrays = new arrays();
 
 //collections
 self.collections = new collections();
+
+//classes
+var camry = new ClassCar('toyota', 2018);
+camry._printDetails();
+
+//static method of ClassCar object
+ClassCar.staticFunction();
+
+//instanceof operator
+var isCar = camry instanceof ClassCar;
+console.log(`instance of operator --> ${isCar}`);
+
+//extended class : class-category
+var camryHybrid = new ClassCategory();
+camryHybrid._printCategory("hybrid");
+
+// Method Overriding
+var objB = new ClassB();
+objB._print();
