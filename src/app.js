@@ -64,3 +64,11 @@ camryHybrid._printCategory("hybrid");
 // Method Overriding
 var objB = new ClassB();
 objB._print();
+
+//callback | sync function 
+var sync = new Callback();
+sync._callSync();
+
+//callback | async function 
+var async = new Callback();
+async._callAsync();
