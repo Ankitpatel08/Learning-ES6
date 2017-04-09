@@ -11,6 +11,10 @@ import collections from "./collections";
 import ClassCar from "./class";
 import ClassCategory from "./class-inheritance";
 import ClassB from "./method-overriding";
+import Callback from "./callback";
+import promises from "./promises";
+import Modules from "./modules";
+import errors from "./errors";
 import css from "./main.css";
 
 //calling function with rest parameters
@@ -62,3 +66,18 @@ camryHybrid._printCategory("hybrid");
 // Method Overriding
 var objB = new ClassB();
 objB._print();
+
+//callback | sync function 
+var sync = new Callback();
+sync._callSync();
+
+//callback | async function 
+var async = new Callback();
+async._callAsync();
+
+//exported class : modules
+var modules = new Modules('Ankit', 22);
+modules._displayDetails();
+
+//errors
+self.errors = new errors();
