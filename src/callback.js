@@ -12,7 +12,7 @@ export default class Callback {
 		setTimeout(function() {
 			fn3();
 			fn4();
-		}, 2000);
+		}, 100);
 	}
 	_callSync() {
 		//sync function : 

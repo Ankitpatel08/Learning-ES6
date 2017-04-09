@@ -14,6 +14,7 @@ import ClassB from "./method-overriding";
 import Callback from "./callback";
 import promises from "./promises";
 import Modules from "./modules";
+import errors from "./errors";
 import css from "./main.css";
 
 //calling function with rest parameters
@@ -77,3 +78,6 @@ async._callAsync();
 //exported class : modules
 var modules = new Modules('Ankit', 22);
 modules._displayDetails();
+
+//errors
+self.errors = new errors();
