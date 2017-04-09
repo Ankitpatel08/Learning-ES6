@@ -13,6 +13,7 @@ import ClassCategory from "./class-inheritance";
 import ClassB from "./method-overriding";
 import Callback from "./callback";
 import promises from "./promises";
+import Modules from "./modules";
 import css from "./main.css";
 
 //calling function with rest parameters
@@ -72,3 +73,7 @@ sync._callSync();
 //callback | async function 
 var async = new Callback();
 async._callAsync();
+
+//exported class : modules
+var modules = new Modules('Ankit', 22);
+modules._displayDetails();
