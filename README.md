@@ -19,3 +19,10 @@ Various specification of ES6.
 	14. Callback & promises
 	15. Modules
 	16. errors
+
+
+*****************************************************************************
+Setup  : 1. install node
+		 2. run "npm install" at root
+		 3. run "webpack" : it will create dist directory
+		 4. open "index.html" in browser
